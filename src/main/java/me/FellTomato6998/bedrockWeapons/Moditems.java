@@ -8,8 +8,13 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class Moditems {
-    public static final Item BEDROCKSWORD_ITEM = registerItem("bedrocksword", new Item.Settings());
+    //Bedrock Sword
+    public static final Item BEDROCKSWORD_ITEM = registerItem("bedrocksword", new Item.Settings().maxCount(1));
 
+    //Bedrock Axe
+    public static final Item BEDROCKAXE_ITEM = registerItem("bedrockaxe", new Item.Settings().maxCount(1));
+
+    //Other
     private static Item registerItem(String name, Item.Settings settings) {
         Identifier id = Identifier.of("bedrock-weapons", name);
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
@@ -17,6 +22,5 @@ public class Moditems {
     }
 
     public static void registerModItems() {
-        //empty
     }
 }

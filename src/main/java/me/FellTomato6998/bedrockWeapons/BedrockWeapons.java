@@ -11,7 +11,13 @@ public class BedrockWeapons implements ModInitializer {
         Moditems.registerModItems();
 
         //Creative Menu
+
+        //Bedrock Sword
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register(entries -> entries.add(Moditems.BEDROCKSWORD_ITEM));
+
+        //Bedrock Axe
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
+                .register(entries -> entries.add(Moditems.BEDROCKAXE_ITEM));
     }
 }
