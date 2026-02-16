@@ -14,6 +14,9 @@ public class Moditems {
     //Bedrock Axe
     public static final Item BEDROCKAXE_ITEM = registerItem("bedrockaxe", new Item.Settings().maxCount(1));
 
+    //Bedrock Golden Apple
+    public static final Item BEDROCKGOLDENAPPLE_ITEM = registerItem("bedrockgoldenapple", new Item.Settings().maxCount(1));
+
     //Other
     private static Item registerItem(String name, Item.Settings settings) {
         Identifier id = Identifier.of("bedrock-weapons", name);
