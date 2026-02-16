@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "bedrock-weapons",
+  "version": "${version}",
+  "name": "Bedrock Weapons & More",
+  "description": "Adds Mineable Bedrock & Bedrock Weapons",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bedrock-weapons/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.FellTomato6998.bedrockWeapons.client.BedrockWeaponsDataGenerator"
+    ],
+    "client": [
+      "me.FellTomato6998.bedrockWeapons.client.BedrockWeaponsClient"
+    ],
+    "main": [
+      "me.FellTomato6998.bedrockWeapons.BedrockWeapons"
+    ]
+  },
+  "mixins": [
+    "bedrock-weapons.mixins.json",
+    {
+      "config": "bedrock-weapons.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
