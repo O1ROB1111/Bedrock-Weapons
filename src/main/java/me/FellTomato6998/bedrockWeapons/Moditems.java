@@ -15,6 +15,9 @@ public class Moditems {
     //Bedrock Axe
     public static final Item BEDROCKAXE_ITEM = registerItem("bedrockaxe", new Item.Settings().maxCount(1));
 
+    //Bedrock Spear
+    public static final Item BEDROCKSPEAR_ITEM = registerItem("bedrockspear", new Item.Settings().maxCount(1));
+
     //Bedrock Golden Apple
     public static final Item BEDROCKGOLDENAPPLE_ITEM = registerItem("bedrockgoldenapple", new Item.Settings().maxCount(64).food(
             new FoodComponent.Builder()

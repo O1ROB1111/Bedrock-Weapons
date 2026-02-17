@@ -16,21 +16,17 @@ public class BedrockWeapons implements ModInitializer {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register(entries -> entries.add(Moditems.BEDROCKSWORD_ITEM));
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SEARCH)
-                .register(entries -> entries.add(Moditems.BEDROCKSWORD_ITEM));
-
         //Bedrock Axe
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register(entries -> entries.add(Moditems.BEDROCKAXE_ITEM));
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SEARCH)
-                .register(entries -> entries.add(Moditems.BEDROCKAXE_ITEM));
+        //Bedrock Spear
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
+                .register(entries -> entries.add(Moditems.BEDROCKSPEAR_ITEM));
 
         //Bedrock Axe
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register(entries -> entries.add(Moditems.BEDROCKGOLDENAPPLE_ITEM));
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SEARCH)
-                .register(entries -> entries.add(Moditems.BEDROCKGOLDENAPPLE_ITEM));
     }
 }

@@ -4,8 +4,12 @@
   "version": "${version}",
   "name": "Bedrock Weapons & More",
   "description": "Adds Mineable Bedrock & Bedrock Weapons",
-  "authors": [],
-  "contact": {},
+  "authors": ["RedstoneBuild101"],
+  "contact": {
+    "homepage": "https://modrinth.com/project/bedrock-weapons-more",
+    "email": "theredstoner101@gmail.com",
+    "issues": "https://github.com/O1ROB1111/Bedrock-Weapons/issues"
+  },
   "license": "MIT",
   "icon": "assets/bedrock-weapons/icon.png",
   "environment": "*",
@@ -31,5 +35,13 @@
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Source Code": "https://github.com/O1ROB1111/Bedrock-Weapons",
+        "Modrinth Profile": "https://modrinth.com/user/RedstoneBuild101"
+      }
+    }
   }
 }
