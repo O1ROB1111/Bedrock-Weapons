@@ -1,47 +1,41 @@
 {
-  "schemaVersion": 1,
-  "id": "bedrock-weapons",
-  "version": "${version}",
-  "name": "Bedrock Weapons & More",
-  "description": "Adds Mineable Bedrock & Bedrock Weapons",
-  "authors": ["RedstoneBuild101"],
-  "contact": {
-    "homepage": "https://modrinth.com/project/bedrock-weapons-more",
-    "email": "theredstoner101@gmail.com",
-    "issues": "https://github.com/O1ROB1111/Bedrock-Weapons/issues"
-  },
-  "license": "MIT",
-  "icon": "assets/bedrock-weapons/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "fabric-datagen": [
-      "me.FellTomato6998.bedrockWeapons.client.BedrockWeaponsDataGenerator"
-    ],
-    "client": [
-      "me.FellTomato6998.bedrockWeapons.client.BedrockWeaponsClient"
-    ],
-    "main": [
-      "me.FellTomato6998.bedrockWeapons.BedrockWeapons"
-    ]
-  },
-  "mixins": [
-    "bedrock-weapons.mixins.json",
-    {
-      "config": "bedrock-weapons.client.mixins.json",
-      "environment": "client"
-    }
-  ],
-  "depends": {
-    "fabricloader": ">=${loader_version}",
-    "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
-  },
-  "custom": {
-    "modmenu": {
-      "links": {
-        "Source Code": "https://github.com/O1ROB1111/Bedrock-Weapons",
-        "Modrinth Profile": "https://modrinth.com/user/RedstoneBuild101"
-      }
-    }
-  }
+	"schemaVersion": 1,
+	"id": "bedrock-weapons",
+	"version": "${version}",
+	"name": "Bedrock Weapons & More",
+	"description": "Adds Mineable Bedrock & Bedrock Weapons",
+	"authors": ["RedstoneBuild101"],
+	"contact": {
+		"homepage": "https://modrinth.com/project/bedrock-weapons-more",
+		"email": "theredstoner101@gmail.com",
+		"issues": "https://github.com/O1ROB1111/Bedrock-Weapons/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/bedrock-weapons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.FellTomato6998.BedrockWeaponsMore"
+		],
+		"fabric-datagen": [
+			"me.FellTomato6998.BedrockWeaponsMoreDataGenerator"
+		]
+	},
+	"mixins": [
+		"bedrock-weapons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"Source Code": "https://github.com/O1ROB1111/Bedrock-Weapons",
+				"Modrinth Profile": "https://modrinth.com/user/RedstoneBuild101"
+			}
+		}
+	}
 }
