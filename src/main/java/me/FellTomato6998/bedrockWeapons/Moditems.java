@@ -1,5 +1,6 @@
 package me.FellTomato6998.bedrockWeapons;
 
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -15,7 +16,13 @@ public class Moditems {
     public static final Item BEDROCKAXE_ITEM = registerItem("bedrockaxe", new Item.Settings().maxCount(1));
 
     //Bedrock Golden Apple
-    public static final Item BEDROCKGOLDENAPPLE_ITEM = registerItem("bedrockgoldenapple", new Item.Settings().maxCount(1));
+    public static final Item BEDROCKGOLDENAPPLE_ITEM = registerItem("bedrockgoldenapple", new Item.Settings().maxCount(64).food(
+            new FoodComponent.Builder()
+                    .nutrition(8)
+                    .saturationModifier(19.2F)
+                    .alwaysEdible()
+                    .build()
+            ));
 
     //Other
     private static Item registerItem(String name, Item.Settings settings) {
